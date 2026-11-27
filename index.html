@@ -1,32 +1,64 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Slow Potion</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <div id="header">
-            <img id="header-pic" src="resources/front-row-cropped.jpg" alt="band profile picture">
-            <h1 id="band-name">SLOW POTION</h1>
-            <!-- TODO: instagram, youtube clickable icons -->
-        </div>
-        <p style="font-style: oblique;">For booking and other inquiries, please email slowpotionmpls@gmail.com</p>
-        <p>Slow Potion is a five-piece cover band based in Minneapolis, Minnesota. We play songs you can't help but sing and dance along to!</p>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Slow Potion</title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+          	<nav>
+              	<ul class="nav">
+                  	<li class="item"><a href="/">
+                      <img src="/assets/potion.png" style="width:75px;" class="logo">
+                  	</a></li>
+                  	<li class="item"><a href="/setlist">SETLIST</a></li>
+                    <li class="item"><a href="/">PHOTOS</a></li>
+                    <li class="item"><a href="/">CONTACT</a></li>
+              	</ul>
+                <!-- TODO: social media -->
+          	</nav>
+      	</div>
+        <nav-bar></nav-bar>
+        <h1 class="title fade-in-up">SLOW POTION</h1>
+    </div>
+    <div class="middle-column">
+        <p class="bio">
+            Slow Potion is a five-piece cover band based in Minneapolis, Minnesota.
+            We play songs you can't help but sing and dance along to!
+            With rock, pop, india, and funk hits spanning the '80s to present day, our set has something for everyone.
+        </p>
         <br>
-        <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/Jc_wocuIedY?si=BNB-xG0XEpWaZJXQ"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen>
-        </iframe>
-    </body>   
+        <div class="rediscover-container">
+            <iframe
+                class="video"
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/Jc_wocuIedY?si=BNB-xG0XEpWaZJXQ"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen>
+            </iframe>
+            <div class="video-caption">
+                <h2 class="subtitle">Rediscover the hits</h2>
+                <p>Our renditions put a tasteful spin on these beloved classics while retaining their iconic elements – keeping them fresh, yet recognizable</p>
+            </div>
+        </div>
+        <br>
+        <p style="font-style: oblique;">For booking and other inquiries, please email slowpotionmpls@gmail.com</p>
+
+        <!-- <html-app>
+            <button>Clicked 0 times</button>
+        </html-app> -->
+    </div>
+<script type="module" src="index.js"></script>
+</body>   
 </html>

@@ -1,0 +1,117 @@
+@keyframes fadeInUp {
+    from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+    to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+.fade-in-up {
+    animation: fadeInUp 1s ease-in;
+}
+body {
+	background: #514b62;
+	/* background: #4a326b; */
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	margin-bottom: 100px;
+	color: white;
+	font-family: "Questrial", sans-serif;
+	font-size: 24px;
+}
+.header {
+	display: grid;
+	margin-bottom: 200px;
+	background-color: #276d67;
+}
+.title {
+  	font-family: "Nosifer", sans-serif;
+	font-size: 96px;
+  	font-weight: 400;
+  	font-style: normal;
+	color: white;
+	margin: 40vh;
+}
+.title:hover {
+  	color: #1d534e;
+}
+.subtitle {
+	font-size: 72px;
+}
+a {
+	text-decoration: none;
+	text-shadow: 4px 4px 4px #000;
+	color: #fff;
+	letter-spacing: 2px;
+	transition: 400ms cubic-bezier(0.7, -0.6, 0.3, 1.2) text-shadow,
+    400ms cubic-bezier(0.7, -0.6, 0.3, 1.2) letter-spacing;
+}
+nav {
+	position: fixed;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 20px;
+	height: 80px;
+	background: #ffffff40;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+.nav {
+	width: 100%;
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+#logo {
+	width: 20px;
+}
+.item a {
+  position: relative;
+  user-select: none;
+  font-size: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin: 0 20px;
+}
+.item a:before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  box-shadow: 1px 1px 1px #000;
+  transform: scaleX(0);
+  transition: 100ms cubic-bezier(0.7, -0.6, 0.3, 1.2) transform;
+}
+.item a:hover {
+  text-shadow: 1px 1px 1px #000;
+  letter-spacing: 5px;
+}
+.item a:hover:before {
+  transform: scaleX(1);
+}
+.middle-column {
+	padding-left: 350px;
+	padding-right: 350px;
+}
+.bio {
+	margin-bottom: 200px;
+}
+.rediscover-container {
+	display: flex;
+	margin-bottom: 200px;
+}
+.video {
+	float: left;
+}
+.video-caption {
+	text-align: left;
+	margin-left: 50px;
+}
